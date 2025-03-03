@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wordle - The New York Times</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jillian Chiu V. Mayo">
+    <meta name="Wordle Game" content="1">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="revised" content="02-22-2025">
+
+    <link rel="icon" href="wordlelogo.png" type="image">
+
+    <style>
+        body {
+            background-color: #e3e3e1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin-top: 30px;
+            font-family: 'Avenir', sans-serif;
+            text-align: center;
+        }
+
+        .wordlelogo {
+            width: 77px;
+            height: 77px;
+        }
+
+        .wordlewordlogo {
+            width: 140px;
+            height: 40px;
+            margin-top: 20px;
+        }
+
+        .introtext {
+            font-family: 'American Typewriter', serif;
+            font-size: 35px;
+            font-weight: 310;
+            margin-top: 20px;
+            margin-bottom: 7px;
+        }
+
+        .fiveletterword {
+            font-family: 'American Typewriter', serif;
+            font-size: 35px;
+            font-weight: 310;
+            margin-bottom: 30px; 
+        }
+
+        .playbutton {
+            padding: 13px 85px;
+            font-size: 16px;
+            font-family: 'Avenir', sans-serif;
+            border-radius: 50px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .dates {
+            margin-top: 40px;
+            font-weight: 230;
+        }
+
+        .credits {
+            margin-top: 10px;
+            font-weight: 230;
+        }
+    </style>
+
+    <link rel="stylesheet" href="wordle.css">
+</head>
+
+<body>
+    <img class="wordlelogo" src="wordlelogo.png" alt="Wordle Logo">
+    <img class="wordlewordlogo" src="wordlewordlogo.svg" alt="Wordle Word Logo">
+
+    <div class="introtext">Get 6 chances to guess</div>
+    <div class="fiveletterword">a 5-letter word.</div>
+
+    <a class="playbutton" href="wordleGame.html">Play</a>
+
+    
+    <div class="dates">
+        <b id="current-date"></b>
+    </div>
+    <div class="credits">Edited by Mayo, Calimlim, Castro</div>
+
+    <script>
+        let date = new Date();
+    </script>
+</body>
+</html>
